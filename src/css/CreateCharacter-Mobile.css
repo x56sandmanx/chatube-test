@@ -1,0 +1,300 @@
+@media (max-width: 480px) {
+
+  body {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .createCharacterContainer {
+    background-color: #282c34;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .createCharacterContainer h1 {
+    margin: 0;
+    margin-top: 5vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  .createCharacterContainer h2 {
+    margin: 0;
+    margin-top: 1vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+  }
+
+  .createCharacterBoxContainer {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: #1f2020;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    gap: 4vh;
+  }
+
+  .createCharacterBoxContainer button {
+    width: 15%;
+    height: 8%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: medium;
+    border: 0;
+    background-color: #0056b3;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+  }
+
+  .createCharacterBoxContainer button:hover {
+    cursor: pointer;
+    animation: scaleUp 0.1s forwards;
+  }
+
+  .createCharacterBoxHeader1 {
+    /* margin: 0; */
+    /* margin-top: 5vh; */
+    /* margin-right: 5vw; */
+    /* gap: 4vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+  }
+
+  .createCharacterBoxHeader2 {
+    margin: 0;
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+  }
+
+  .createCharacterBoxInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: 65%;
+  }
+
+  .createCharacterBoxInput p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    /* margin-left: 5px; */
+  }
+
+  .createCharacterBoxInput input {
+    width: 100%;
+    height: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: medium;
+    border-radius: 20px;
+    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#616161;
+    color: white;
+    text-align: center;
+  }
+
+  .createCharacterBoxDesc {
+    width: 50%;
+    height: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    border-radius: 20px;
+    border: 0;
+    color: white;
+    /* margin-bottom: 5vh; */
+    /* margin-top: -5vh; */
+  }
+
+  .createCharacterBoxDesc textarea {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: medium;
+    border-radius: 20px;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#616161;
+    color: white;
+    text-align: center;
+  }
+
+  .createCharacterBoxDesc p {
+    margin: 0;
+  }
+
+  .createCharacterBoxUpload {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .createCharacterBoxUpload p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    margin-left: 5px;
+    margin: 0;
+    margin-top: 2vh;
+  }
+
+  .createCharacterBoxUpload img {
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: -3vh;
+    width: 7.5%;
+    height: 15%;
+    margin-left: 12vw;
+    border-radius: 10px;
+  }
+
+  .createCharacterBoxDropDown {
+    width: 20%;
+    height: 60%;
+  }
+
+  .createCharacterBoxDropDown p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+  }
+
+  .createCharacterBoxDropDown select {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    background-color: rgb(96, 100, 101);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+  }
+
+  .createCharacterVoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .createCharacterVoice button {
+    margin-top: 20px;
+    height: 15%;
+  }
+
+  .createCharacterVoiceHeader {
+    margin: 0;
+    margin-top: 8vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: x-large;
+  }
+
+  .characterAudio {
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+  }
+
+  .createCharacterVoice select {
+    width: 25%;
+    height: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    background-color: rgb(96, 100, 101);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+  }
+
+  .createCharacterSliderContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+    width: 100%;
+  }
+
+  .createCharacterSliderContainer p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: x-large;
+  }
+
+  .createCharacterSlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .createCharacterSlider p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: large;
+  }
+  .createCharacterSlider input {
+    width: 40%;
+    height: 100%;
+  }
+
+  .errorText {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    margin-bottom: 3vh;
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

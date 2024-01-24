@@ -1,0 +1,54 @@
+@media (min-width: 481px) {
+
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    height: 8rem;
+    margin-top: auto;
+
+  }
+
+  .footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: medium;
+    margin: 0;
+  }
+
+  .links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .links p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    color: rgb(94, 94, 255);
+    text-decoration: underline;
+  }
+
+  .links p:hover {
+    cursor: pointer;
+    color: rgb(61, 61, 255);
+  }
+}

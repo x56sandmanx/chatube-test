@@ -1,0 +1,129 @@
+@media (min-width: 481px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0
+  }
+
+  .characterModal {
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    max-height: 90vh;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    border: 0;
+    background-color: #282c34;
+  }
+
+  .characterModalImage {
+    max-width:50%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .characterModalName {
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .characterModalPronouns {
+    text-align: center;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalId {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalDesc {
+    text-align: center;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalCategoryIds {
+    text-align: center;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalTagIds {
+    text-align: center;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalCreatedBy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .characterModalCreatedBy p {
+    margin: 0;
+    text-align: center;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalButton {
+    padding: 1vh 2vh;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: medium;
+    border: 0;
+    background-color: #201c1c;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+  }
+
+  .characterModalButton:hover {
+    cursor: pointer;
+    animation: scaleUp 0.1s forwards;
+  }
+
+  .characterModalContent {
+    margin: 5%;
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,337 @@
+@media (min-width: 481px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .profilePageContainer {
+    background-color: #282c34;
+    height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .profilePageTextBox {
+    margin-bottom: 1.5em;
+  }
+
+  .profilePageImage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  .profilePageImage input {
+    color:white;
+  }
+
+  .profilePageImage img {
+    width: 8rem;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  .profileContainer {
+    display: flex;
+    background-color: #373d48;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+  }
+
+  .profileSettingsSectionsListContainer {
+    display: flex;
+    justify-content: right;
+    overflow-y: auto;
+    width: 34%;
+    min-width: fit-content;
+    background-color: #282c34;
+  }
+
+  .profileSettingsSectionsListContainer::-webkit-scrollbar {
+    /* not working, but makes scrollbar disappear which is kind of cool */
+    color:black;
+  }
+
+  .profileSettingsSectionsList {
+    display:flex;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-right: 0.5em;
+    margin-left: 1em;
+    width: 13em;
+  }
+
+  .profileSettingsSectionsListHeader {
+    color:#999999;
+    font-size: small;
+    font-weight: bold;
+    margin-left: 1em;
+    margin-bottom: 0.8em;
+  }
+
+  .profileSettingsSectionButton {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 0;
+    height: 1.9em;
+    border-radius: 0.3em;
+    margin-right: 0.4em;
+    margin-left: 0.4em;
+    margin-bottom: 0.2em;
+    padding:0.6em;
+    font-size: medium;
+    color: #bfbfbf;
+    background-color: #282c34;
+  }
+
+  .profileSettingsSectionButton:hover {
+    cursor: pointer;
+    background-color: #373d48;
+    color: #d9d9d9;
+  }
+
+  .profileSettingsSectionButton:active {
+    background-color: #434956;
+    color: white
+  }
+
+  .profileSelectedSettingsSectionButton {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 0;
+    height: 1.9em;
+    border-radius: 0.3em;
+    margin-right: 0.4em;
+    margin-left: 0.4em;
+    margin-bottom: 0.2em;
+    padding:0.6em;
+    font-size: medium;
+    color: white;
+    background-color: #4e5565;
+  }
+  .profileSelectedSettingsSectionButton:hover {
+    background-color: #373d48;
+  }
+  .profileSelectedSettingsSectionButton:active {
+    background-color: #434956;
+  }
+
+  .profileSettingsSectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 1.7em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-left: 0.5em;
+    overflow-y: auto;
+    width: 45em;
+  }
+
+  .profileSettingsSectionsContainerVariant {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 1.7em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-left: 0.5em;
+    overflow-y: auto;
+    width: 75rem;
+  }
+
+  .profileSettingsSectionHeader {
+    color:white;
+    font-size: x-large;
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+  }
+
+  .profileUserInformationContainer {
+    padding-top: 0.1em;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    height: fit-content;
+    width: 35em;
+    border-radius: 0.5em;
+    background-color: #282c34;
+    color: white;
+  }
+
+  .profileUserInformationCharactersContainer {
+    padding-top: 0.1em;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    height: fit-content;
+    width: 100%;
+    height: 46rem;
+    border-radius: 0.5em;
+    background-color: #282c34;
+    color: white;
+  }
+
+  .uploadProfileImageButton {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    display:flex;
+  }
+
+  .settingsLabel {
+    color:#999999;
+    font-size: small;
+    font-weight: bold;
+  }
+
+  .userPersonaContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .userPersona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .userPersona img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+  }
+
+  .userPersona p {
+    text-align: center;
+  }
+
+  .userPersonaButtons {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    margin-top: 5rem;
+    width: 90%;
+  }
+
+  .userPersonaButtons button {
+    width: 10rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: medium;
+    border: 0;
+    background-color: #0056b3;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+  }
+
+  .userPersonaButtons button:hover {
+    cursor: pointer;
+    animation: scaleUp 0.1s forwards;
+  }
+
+  .profileCharacters {
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .userInteractionSlider {
+    display: flex;
+    align-items: center;
+  }
+
+  .userInteractionSlider p {
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  .character-grid {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 80vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 5px;
+  }
+
+  .all-character-profile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 5px;
+    justify-content: center;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: large;
+    margin-top: 1rem;
+  }
+
+  .pagination span {
+    margin: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .leftArrow {
+    width: 2rem;
+    transform: rotate(180deg);
+  }
+
+  .rightArrow {
+    width: 2rem;
+  }
+
+  .leftArrow:hover {
+    cursor: pointer;
+  }
+
+  .rightArrow:hover {
+    cursor: pointer;
+  }
+
+  .disabled-arrow {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

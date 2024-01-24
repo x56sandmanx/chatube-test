@@ -1,0 +1,483 @@
+@media (max-width: 480px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  /* .characterPageContainer {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  } */
+
+  .characterPageChatContainer {
+    /* width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; */
+    background-color: #282c34;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .characterPageChatHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+  }
+
+  .characterPageChatHeader button {
+    margin-top: 2vh;
+    padding: 1vh 2vh;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: large;
+    border: 0;
+    background-color: #201c1c;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+  }
+
+  .characterPageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  .emotion {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: large;
+  }
+
+  .backButtonDiv {
+    margin-top: 1rem;
+    margin-right: 10rem;
+    width: 100%;
+    position: absolute;
+  }
+
+  .backButton {
+    width: 30px;
+    height: 30px;
+    margin-left: 25%;
+  }
+
+  .backButton:hover {
+    cursor: pointer;
+  }
+
+  .characterImage {
+    aspect-ratio: 1;
+    height: 30%;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .characterPageChatBox {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    /* overflow-y: auto; */
+    /* height: 10rem; */
+    /* border-radius: 10px; */
+    /* margin-top: 20px; */
+  }
+
+  #chat_box {
+    display: flex;
+    flex-direction: column;
+    max-height: 35rem;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    width: 100%;
+  }
+
+  .characterPageInputBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* gap: 40px;
+    width: 80%;
+    height: 5rem;
+    margin-top: 20px;
+    margin-bottom: 1rem; */
+
+    width:100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .characterPageInputBox input {
+    /* width: 20rem; */
+    height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: medium;
+    border-radius: 20px;
+    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    background-color:#616161;
+    color: white;
+  }
+
+  .characterPageActions {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+
+  .submitButton {
+    width: 5rem;
+    height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: medium;
+    border: 0;
+    background-color: #0056b3;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+  }
+
+  .submitButton:hover {
+    cursor: pointer;
+    animation: scaleUp 0.1s forwards;
+  }
+
+  .disabledButton {
+    width: 5rem;
+    height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: medium;
+    border: 0;
+    background-color: #8a8a8a;
+    color: white;
+  }
+
+  .characterMessage {
+    display: flex;
+    font-size: small;
+    margin-right: auto;
+    margin-left: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .userMessage {
+    display: flex;
+    font-size: small;
+    margin-left: auto;
+    margin-right: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .userMessage p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin-right: 20px;
+  }
+
+  .characterMessage p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin-left: 20px;
+  }
+
+  .userMessage img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .messageImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .messageImage p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin: 0px;
+    font-size: medium;
+  }
+
+  .characterMessage img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .selectedButton {
+    width: 5rem;
+    height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: small;
+    border: 0;
+    background-color: #002750;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+  }
+
+  .selectedButton:hover {
+    cursor: pointer;
+    animation: scaleUp 0.1s forwards;
+  }
+
+  .nonSelectedButton {
+    width: 5rem;
+    height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: small;
+    border: 0;
+    background-color: #0056b3;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+  }
+
+  .nonSelectedButton:hover {
+    cursor: pointer;
+    animation: scaleUp 0.1s forwards;
+  }
+
+  /* Kevin CSS */
+  .emotionChange {
+    text-align: center;
+    display: flex;
+
+    width: 5rem;
+    height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: medium;
+    border: 0;
+    background-color: #0056b3;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+
+    /* appearance: none; */
+  }
+
+  .characterHeaderName {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  .characterHeaderId {
+    text-align: center;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterHeaderDesc {
+    width: 80%;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterPageChatHeader p {
+    margin:0;
+    padding-top: 0.6rem;
+  }
+
+  .characterLikeCount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 4rem;
+  }
+
+  .characterLikeCount p {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+  }
+
+  .characterLikeCount img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .characterModal {
+    margin: 1vh;
+    /* margin-top: 5vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 90vh;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    border: 0;
+    background-color: #282c34;
+  }
+
+  .characterModalImage {
+    max-width:50%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .characterModalName {
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .characterModalPronouns {
+    text-align: center;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalId {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalDesc {
+    text-align: center;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalCategoryIds {
+    text-align: center;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalTagIds {
+    text-align: center;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalCreatedBy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .characterModalCreatedBy p {
+    margin: 0;
+    text-align: center;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .characterModalButton {
+    padding: 1vh 2vh;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border-radius: 10px;
+    font-size: medium;
+    border: 0;
+    background-color: #201c1c;
+    color: white;
+    animation: scaleDown 0.1s forwards;
+  }
+
+  .characterModalButton:hover {
+    cursor: pointer;
+    animation: scaleUp 0.1s forwards;
+  }
+
+  .characterModalContent {
+    margin: 5%;
+  }
+
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+}
